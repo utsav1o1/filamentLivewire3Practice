@@ -1,8 +1,11 @@
 <?php
 
+use App\Livewire\ShowAboutUs;
 use App\Livewire\ShowHome;
 use App\Livewire\ShowServiceDetail;
 use App\Livewire\ShowServicesPage;
+use App\Livewire\ShowTeam;
+use App\Models\AboutUs;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +25,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', ShowHome::class)->name('Home');
 Route::get('/services', ShowServicesPage::class)->name('Service');
 Route::get('/service/{id}', ShowServiceDetail::class)->name('ServiceDetail');
+Route::get('/ourteams', ShowTeam::class)->name('team');
+Route::get('/about-us', ShowAboutUs::class)->name('AboutUs');
