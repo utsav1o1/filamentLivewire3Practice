@@ -1,8 +1,10 @@
 <?php
 
+use App\Livewire\FAQ;
 use App\Livewire\ShowAboutUs;
 use App\Livewire\ShowBlogDetail;
 use App\Livewire\ShowBlogs;
+use App\Livewire\ShowContactPage;
 use App\Livewire\ShowHome;
 use App\Livewire\ShowServiceDetail;
 use App\Livewire\ShowServicesPage;
@@ -29,4 +31,7 @@ Route::get('/service/{id}', ShowServiceDetail::class)->name('ServiceDetail');
 Route::get('/ourteams', ShowTeam::class)->name('team');
 Route::get('/about-us', ShowAboutUs::class)->name('AboutUs');
 Route::get('/blogs', ShowBlogs::class)->name('Blog');
+// Route::get('/blogs/category={categoryslug}', ShowBlogs::class)->name('Blogs');
 Route::get('/blog-detail/{id}', ShowBlogDetail::class)->name('BlogDetail');
+Route::get('/faqs', FAQ::class)->name('FAQ');
+Route::get('/contactus', ShowContactPage::class)->name('Contact');

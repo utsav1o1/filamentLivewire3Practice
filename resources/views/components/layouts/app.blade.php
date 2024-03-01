@@ -47,10 +47,10 @@
                         <li class="nav-item "> <a wire:navigate class="nav-link" href="{{route('AboutUs')}}">About Us</a></li>
                         <li class="nav-item "> <a wire:navigate class="nav-link" href="{{route('Service')}}">Services</a></li>
                         <li class="nav-item "> <a wire:navigate class="nav-link" href="{{route('team')}}">Our Team</a></li>
-                        <li class="nav-item "><a class="nav-link " href="blog.html">Blog</a></li>
-                        <li class="nav-item "><a class="nav-link " href="faq.html">FAQ</a></li>
+                        <li class="nav-item "><a wire:navigate class="nav-link " href="{{route('Blog')}}">Blog</a></li>
+                        <li class="nav-item "><a wire:navigate class="nav-link " href="{{route('FAQ')}}">FAQ</a></li>
                     </ul>
-                    <a href="#!" class="btn btn-outline-primary">Contact Us</a>
+                    <a wire:navigate href="{{route('Contact')}}" class="btn btn-outline-primary">Contact Us</a>
                 </div>
             </div>
         </nav>
